@@ -1,0 +1,315 @@
+/** @format */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;800&display=swap');
+html{
+	font-family:  'Open Sans', sans-serif;
+}
+body {
+	margin: 0;
+	font-family:  'Open Sans', sans-serif;
+	-webkit-font-smoothing: 'Open Sans', sans-serif;
+	-moz-osx-font-smoothing: 'Open Sans', sans-serif;}
+
+code {
+	font-family: 'Open Sans', sans-serif;
+}
+.nav-up{
+	box-shadow: rgba(0, 0, 0, 0.45) 0px 5px 10px -10px;}
+.nav-up[dark]{
+	box-shadow: rgba(241, 14, 47, 0.45) 0px 5px 10px -10px;}
+
+strong {
+	position: relative;
+	z-index: 2;
+	overflow: hidden;
+  }
+  strong::after {
+	content: "";
+	position: absolute;
+	bottom: -0.125rem;
+	left: 0;
+	right: 1rem;
+	height:1rem;
+	z-index: -1;
+	background-image: url("./components/pics/underline.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	animation: animatiaonde 1.5s infinite ease-in-out;
+  }
+  
+  @keyframes animatiaonde {
+	0%   {width: 0;}
+	100%  {width: 110%;}
+  }
+
+  input:focus {
+    outline: none !important;
+}
+
+input[type="email"]:focus{
+	--tw-ring-color: rgba(233, 6, 6, 0.01);
+}
+
+
+/* .recharts-legend-item-text{
+	margin-top: -10px;
+	margin-left: -39px;
+	}
+	
+	
+	
+	.recharts-legend-item{
+	margin-right: 10px;
+	display: flex;
+	flex-direction: row;
+	}
+	
+	.recharts-legend-wrapper{
+	position: absolute;
+	width: 7rem;
+	
+	top: 1px;
+	left: 301px;
+	} */
+.recharts-surface{
+	/* border: 1px solid red; */
+	padding: 5rem;
+	width: 100%;
+	max-height: 600px !important;
+}
+
+/* .recharts-surface{
+	
+} */
+@media (min-width: 640px) { 
+	.recharts-surface{
+		/* border: 2px solid rgb(0, 255, 179); */
+		padding: 0rem;
+		width: 100%;
+		height: 600px !important;
+	}
+}
+/* Tailwind CSS  */
+
+@layer base {
+	h1 {
+	  /* @apply text-2xl; */
+	}
+	h2 {
+	  /* @apply text-xl; */
+	}
+  }
+  
+  @layer components {
+	.btn-blue {
+	  /* @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded; */
+	}
+  }
+  
+  @layer utilities {
+	.filter-none {
+	  /* filter: none; */
+	}
+	.filter-grayscale {
+	  /* filter: grayscale(100%); */
+	}
+  }
+
+  /* Menu CSS */
+  .active{
+	/* font-size: 2rem; */
+	/* font-size: 1rem; */
+	color: blueviolet;
+	cursor: pointer;
+	/* padding: .75rem  0; */
+	/* block py-2 pr-4 pl-3 cursor-pointer */
+  }
+
+  /* #nav-link {
+	  font-size: 2rem;
+  } */
+
+  .custom-css{
+    text-align: justify;
+    word-spacing:0px;
+	
+}
+
+#aboutText{
+
+}
+
+.underlined {
+            color: black;
+            flex: 1;
+			background-image: linear-gradient(to right,#b169ff,#8514ff);
+            background-size: 0% 100%;
+            background-repeat: no-repeat;
+            transition: background 1.5s;
+			background-position: 0 1.5rem;
+            }
+            .underlined:hover {
+            background-size: 100% 100%;
+            }
+            
+            .underlined--thick {
+            
+            }
+		
+/*  */
+.background-animate {
+    background-size: 400%;
+
+    -webkit-animation: AnimationName 5s ease-in-out infinite;
+    -moz-animation: AnimationName 5s ease-in-out infinite;
+    animation: AnimationName 5s ease-in-out infinite;
+  }
+
+  @keyframes AnimationName {
+    0%,
+    100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+/* .gradient-border {
+  --border-width: 3px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 200px;
+  font-family: Lato, sans-serif;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: white;
+  background: #222;
+  border-radius: var(--border-width);
+}
+.gradient-border::after {
+  position: absolute;
+  content: "";
+  top: calc(-1 * var(--border-width));
+  left: calc(-1 * var(--border-width));
+  z-index: -1;
+  width: calc(100% + var(--border-width) * 2);
+  height: calc(100% + var(--border-width) * 2);
+  background: linear-gradient(60deg, #5f86f2, #a65ff2, #f25fd0, #f25f61, #f2cb5f, #abf25f, #5ff281, #5ff2f0);
+  background-size: 300% 300%;
+  background-position: 0 50%;
+  border-radius: calc(2 * var(--border-width));
+  animation: moveGradient 4s alternate infinite;
+}
+
+@keyframes moveGradient {
+  50% {
+    background-position: 100% 50%;
+  }
+} */
+
+
+
+
+.tk-blob {
+  animation: blob-turn 50s ease-in-out infinite;
+  fill: #7f0ef0;
+  position: relative;
+  transform-origin: center;
+  border:none;
+}
+.tk-blob svg {
+  animation: blob-skew calc( var(--time, 50s) * 0.5 ) linear 0s infinite;
+  transform-origin: center;
+}
+
+.tk-blob svg path {
+  animation: blob-scale calc( var(--time, 50s) * 0.5 ) ease-in-out 0s infinite;
+  transform-origin: center;
+}
+
+@keyframes blob-turn {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes blob-skew {
+  0% {
+    transform: skewY(0deg);
+  }
+  13% {
+    transform: skewY( calc( (1.8deg) * var(--amount, 2)) );
+  }
+  18% {
+    transform: skewY( calc( (2.2deg) * var(--amount, 2)) );
+  }
+  24% {
+    transform: skewY( calc( (2.48deg) * var(--amount, 2)) );
+  }
+  25% {
+    transform: skewY( calc( (2.5deg) * var(--amount, 2)) );
+  }
+  26% {
+    transform: skewY( calc( (2.48deg) * var(--amount, 2)) );
+  }
+  32% {
+    transform: skewY( calc( (2.2deg) * var(--amount, 2)) );
+  }
+  37% {
+    transform: skewY( calc( (1.8deg) * var(--amount, 2)) );
+  }
+  50% {
+    transform: skewY(0deg);
+  }
+  63% {
+    transform: skewY( calc( (-1.8deg) * var(--amount, 2)) );
+  }
+  68% {
+    transform: skewY( calc( (-2.2deg) * var(--amount, 2)) );
+  }
+  74% {
+    transform: skewY( calc( (-2.48deg) * var(--amount, 2)) );
+  }
+  75% {
+    transform: skewY( calc( (-2.5deg) * var(--amount, 2)) );
+  }
+  76% {
+    transform: skewY( calc( (-2.48deg) * var(--amount, 2)) );
+  }
+  82% {
+    transform: skewY( calc( (-2.2deg) * var(--amount, 2)) );
+  }
+  87% {
+    transform: skewY( calc( (-1.8deg) * var(--amount, 2)) );
+  }
+  100% {
+    transform: skewY(0deg);
+  }
+}
+
+@keyframes blob-scale {
+  0% {
+    transform: scaleX(.9) scaleY(1);
+  }
+  25% {
+    transform: scaleX(.9) scaleY(.9);
+  }
+  50% {
+    transform: scaleX(1) scaleY(.9);
+  }
+  75% {
+    transform: scaleX(.9) scaleY(.9);
+  }
+  100% {
+    transform: scaleX(.9) scaleY(1);
+  }
+}
