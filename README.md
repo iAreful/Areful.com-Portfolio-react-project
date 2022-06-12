@@ -1,14 +1,11 @@
 ![Screenshot_21](https://user-images.githubusercontent.com/15269933/173217144-65434501-544b-4110-a0b1-8e58175de726.png)
 
-- [x] Publish
+- [x] Publish ❤️☕
 - [x] dark mode
-- [ ] update blog section
+- [ ] update blog section ⌛
 - [ ] Project listed
-- [ ] etc
-
-
-
-
+- [x] Brainstorming 💡🧠⚡🤯
+- [ ] etc 
 
 
 # Getting Started with Create React App
